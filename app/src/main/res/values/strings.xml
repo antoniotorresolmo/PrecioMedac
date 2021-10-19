@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="txtNombre">Nombre</string>
+    <string name="btnCalcular">Calcular importe</string>
+    <string name="swIva">Incluir IVA</string>
+    <string name="lblModulo">MÓDULO</string>
+    <string name="lblTurno">TURNO</string>
+    <string name="rBtnDam">DAM</string>
+    <string name="rBtnDaw">DAW</string>
+    <string name="rBtnAsir">ASIR</string>
+
+    <string name="rBtnMorning">Mañana</string>
+    <string name="rBtnTarde">Tarde</string>
+    <string name="rBtnOnline">Online</string>
+</resources>

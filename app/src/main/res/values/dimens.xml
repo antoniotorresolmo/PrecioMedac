@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="txtMarginTop">32dp</dimen>
+    <dimen name="lblMarginStartEnd">64dp</dimen>
+    <dimen name="lblMarginTop">40dp</dimen>
+    <dimen name="rgMarginTop">16dp</dimen>
+    <dimen name="rgModuloMarginStart">64dp</dimen>
+    <dimen name="rgTurnoMarginEnd">55dp</dimen>
+    <dimen name="swMarginBottom">32dp</dimen>
+    <dimen name="lblSolMarginBottom">64dp</dimen>
+    <dimen name="lblSolTextSize">34sp</dimen>
+    <dimen name="lblTitulosTextSize">20sp</dimen>
+</resources>

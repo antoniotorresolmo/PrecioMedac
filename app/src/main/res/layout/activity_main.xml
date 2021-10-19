@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/txtMarginTop"
+        android:ems="10"
+        android:hint="@string/txtNombre"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/swIva"
+        style="@style/switchIva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/swMarginBottom"
+        android:checked="true"
+        android:text="@string/swIva"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblModulo"
+        style="@style/lblTitulos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/lblMarginStartEnd"
+        android:layout_marginTop="@dimen/lblMarginTop"
+        android:text="@string/lblModulo"
+        android:textSize="@dimen/lblTitulosTextSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+    <TextView
+        android:id="@+id/lblTurno"
+        style="@style/lblTitulos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/lblMarginTop"
+        android:layout_marginEnd="@dimen/lblMarginStartEnd"
+        android:text="@string/lblTurno"
+        android:textSize="@dimen/lblTitulosTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+    <RadioGroup
+        android:id="@+id/rgModulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/rgModuloMarginStart"
+        android:layout_marginTop="@dimen/rgMarginTop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblModulo">
+
+        <RadioButton
+            android:id="@+id/rBtnDam"
+            style="@style/RadioButtonModulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/rBtnDam" />
+
+        <RadioButton
+            android:id="@+id/rBtnDaw"
+            style="@style/RadioButtonModulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rBtnDaw" />
+
+        <RadioButton
+            android:id="@+id/rBtnAsir"
+            style="@style/RadioButtonModulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rBtnAsir" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rgMarginTop"
+        android:layout_marginEnd="@dimen/rgTurnoMarginEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTurno">
+
+        <RadioButton
+            android:id="@+id/rBtnMorning"
+            style="@style/RadioButtonTurno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/rBtnMorning" />
+
+        <RadioButton
+            android:id="@+id/rBtnTarde"
+            style="@style/RadioButtonTurno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rBtnTarde" />
+
+        <RadioButton
+            android:id="@+id/rBtnOnline"
+            style="@style/RadioButtonTurno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rBtnOnline" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/lblPrecio"
+        style="@style/lblSol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/lblSolMarginBottom"
+        android:textSize="@dimen/lblSolTextSize"
+        app:layout_constraintBottom_toTopOf="@+id/swIva"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
